@@ -1,0 +1,9 @@
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\bin\Debug\GeneratorBitMap.exe.config
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\bin\Debug\GeneratorBitMap.exe
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\bin\Debug\GeneratorBitMap.pdb
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\obj\Debug\GeneratorBitMap.csprojResolveAssemblyReference.cache
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\obj\Debug\GeneratorBitMap.Form1.resources
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\obj\Debug\GeneratorBitMap.Properties.Resources.resources
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\obj\Debug\GeneratorBitMap.csproj.GenerateResource.Cache
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\obj\Debug\GeneratorBitMap.exe
+C:\Users\Jacek\Documents\GitHub\GeneratorBitMap\GeneratorBitMap\GeneratorBitMap\obj\Debug\GeneratorBitMap.pdb
