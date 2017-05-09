@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GeneratorBitMap
 {
@@ -71,7 +72,33 @@ namespace GeneratorBitMap
             pictureBox1.DrawToBitmap(bmp, pictureBox1.ClientRectangle);
 
             ImageConverter converter = new ImageConverter();
-            pictureBox1.Image.
+            //pictureBox1.Image.
+
+            //****************************************************
+            //zapis "jaka to liczba" do pliku w postaci 10 cyfr(0,1) 
+            int jakaToLiczba = Int32.Parse(txtNumber.Text);
+            int[] jakaToLiczbaBinary;
+            jakaToLiczbaBinary = new int[10];
+
+            string path = @"C:\Users\MM\Desktop\CiagiBinarne.txt"; //ZMIEN SCIEZKE
+
+            using (StreamWriter sw = new StreamWriter(path, true))
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    if (i != jakaToLiczba)
+                    {
+                        jakaToLiczbaBinary[i] = 0;
+                    }
+                    else
+                    {
+                        jakaToLiczbaBinary[i] = 1;
+                    }
+                    sw.Write(jakaToLiczbaBinary[i] + " ");
+                }
+                sw.WriteLine();
+            }
+            //****************************************************
         }
     }
 }
