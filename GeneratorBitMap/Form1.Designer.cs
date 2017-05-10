@@ -31,15 +31,23 @@
             System.Windows.Forms.Button bttnSave;
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.bttnClear = new System.Windows.Forms.Button();
+            this.txtNumber = new System.Windows.Forms.TextBox();
             bttnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // bttnSave
+            // 
+            bttnSave.Location = new System.Drawing.Point(143, 200);
+            bttnSave.Name = "bttnSave";
+            bttnSave.Size = new System.Drawing.Size(75, 25);
+            bttnSave.TabIndex = 1;
+            bttnSave.Text = "Save";
+            bttnSave.UseVisualStyleBackColor = true;
+            bttnSave.Click += new System.EventHandler(this.bttnSave_Click);
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::GeneratorBitMap.Properties.Resources.blackField;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(12, 25);
             this.pictureBox1.Name = "pictureBox1";
@@ -52,16 +60,6 @@
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
-            // bttnSave
-            // 
-            bttnSave.Location = new System.Drawing.Point(252, 200);
-            bttnSave.Name = "bttnSave";
-            bttnSave.Size = new System.Drawing.Size(75, 25);
-            bttnSave.TabIndex = 1;
-            bttnSave.Text = "Save";
-            bttnSave.UseVisualStyleBackColor = true;
-            bttnSave.Click += new System.EventHandler(this.bttnSave_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -71,34 +69,25 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "New Number";
             // 
-            // textBox1
+            // txtNumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(66, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // bttnClear
-            // 
-            this.bttnClear.Location = new System.Drawing.Point(134, 200);
-            this.bttnClear.Name = "bttnClear";
-            this.bttnClear.Size = new System.Drawing.Size(75, 25);
-            this.bttnClear.TabIndex = 4;
-            this.bttnClear.Text = "Clear";
-            this.bttnClear.UseVisualStyleBackColor = true;
+            this.txtNumber.Location = new System.Drawing.Point(143, 41);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(66, 20);
+            this.txtNumber.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 287);
-            this.Controls.Add(this.bttnClear);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(275, 299);
+            this.Controls.Add(this.txtNumber);
             this.Controls.Add(this.label1);
             this.Controls.Add(bttnSave);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -109,8 +98,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button bttnClear;
+        private System.Windows.Forms.TextBox txtNumber;
     }
 }
 
